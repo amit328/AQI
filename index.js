@@ -198,7 +198,7 @@ app.get('/weather/:latlon',async (request, response) => {
           const weather_data=await weather_response.json();
 
           //const aq_url=`https://api.openaq.org/v1/latest?coordinates=${lat},${lon}`;
-          const aq_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=7516fea019af428ab858750f84f8ea1d`;
+          const aq_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
           const aq_response = await fetch(aq_url);
           const aq_data=await aq_response.json();
           const data={
@@ -220,7 +220,7 @@ app.get('/weather1/:country',async (request, response) => {
     // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
     const api_key=process.env.API_KEY;
     
-    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?&city=${country[0]}&key=7516fea019af428ab858750f84f8ea1d`;
+    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?&city=${country[0]}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
            const weather_response = await fetch(weather_url);
           const weather_data=await weather_response.json();
           const data={
@@ -251,7 +251,7 @@ app.get('/weather2/:postal_code',async (request, response) => {
     // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
     const api_key=process.env.API_KEY;
     
-    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?&postal_code=${postal_code[0]}&key=7516fea019af428ab858750f84f8ea1d`;
+    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?&postal_code=${postal_code[0]}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
            const weather_response = await fetch(weather_url);
           const weather_data=await weather_response.json();
           const data={
@@ -289,7 +289,7 @@ const latlon =  request.params.lat.split(',');
     // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
     const api_key=process.env.API_KEY;
     
-    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=7516fea019af428ab858750f84f8ea1d`;
+    const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
            const weather_response = await fetch(weather_url);
           const weather_data=await weather_response.json();
           const data={
@@ -321,7 +321,7 @@ app.get('/weather/:latlon_forecast',async (request, response) => {
            const weather_data=await weather_response.json();
  
            //const aq_url=`https://api.openaq.org/v1/latest?coordinates=${lat},${lon}`;
-           const aq_url=`https://api.weatherbit.io/v2.0/forecast/airquality?lat=${lat}&lon=${lon}&key=7516fea019af428ab858750f84f8ea1d`;
+           const aq_url=`https://api.weatherbit.io/v2.0/forecast/airquality?lat=${lat}&lon=${lon}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
            const aq_response = await fetch(aq_url);
            const aq_data=await aq_response.json();
            const data={
@@ -343,7 +343,7 @@ app.get('/weather/:latlon_forecast',async (request, response) => {
      // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
      const api_key=process.env.API_KEY;
      
-     const weather_url=`https://api.weatherbit.io/v2.0/forecast/airquality?&city=${country[0]}&key=7516fea019af428ab858750f84f8ea1d`;
+     const weather_url=`https://api.weatherbit.io/v2.0/forecast/airquality?&city=${country[0]}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
             const weather_response = await fetch(weather_url);
            const weather_data=await weather_response.json();
            const data={
@@ -374,7 +374,7 @@ app.get('/weather/:latlon_forecast',async (request, response) => {
      // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
      const api_key=process.env.API_KEY;
      
-     const weather_url=`https://api.weatherbit.io/v2.0/forecast/airquality?&postal_code=${postal_code[0]}&key=7516fea019af428ab858750f84f8ea1d`;
+     const weather_url=`https://api.weatherbit.io/v2.0/forecast/airquality?&postal_code=${postal_code[0]}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
             const weather_response = await fetch(weather_url);
            const weather_data=await weather_response.json();
            const data={
@@ -412,7 +412,7 @@ app.get('/weather/:latlon_forecast',async (request, response) => {
      // const api_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=c39e8bc08f7f42769ff7af360eb0cfd7`;
      const api_key=process.env.API_KEY;
      
-     const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=7516fea019af428ab858750f84f8ea1d`;
+     const weather_url=`https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=25f9c7fc8ea7435ab676caaba9c998e6`;
             const weather_response = await fetch(weather_url);
            const weather_data=await weather_response.json();
            const data={
